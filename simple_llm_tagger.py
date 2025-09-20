@@ -6,13 +6,13 @@ from pathlib import Path
 
 def get_llm_tags(content: str) -> list[str]:
     """Get tags from local LLM"""
-    prompt = f"Generate 3-5 tags for this note. Return only JSON array: ['tag1', 'tag2']. Content: {content[:400]}..."
+    prompt = f"Generate 5-10 tags for this note. Return only JSON array: ['tag1', 'tag2']. Content: {content[:400]}..."
     
     payload = {
         "model": "llama3.2",
         "prompt": prompt,
         "stream": False,
-        "options": {"temperature": 0.3, "num_predict": 50}
+        "options": {"temperature": 0.3, "num_predict": 100}
     }
     
     try:
