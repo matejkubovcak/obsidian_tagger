@@ -1,0 +1,12 @@
+{
+  "prompt_template": "Generate 5-10 tags for this note. Return only JSON array: ['tag1', 'tag2'].(comma delimited!). For multiword tags use - as a delimiter(eg 'machine-learning' not 'machine learning').  Content: {content}...",
+  "content_length_limit": 400,
+  "api_url": "http://localhost:11434/api/generate",
+  "timeout": 20,
+  "model": "llama3.2",
+  "stream": false,
+  "options": {
+    "temperature": 0.3,
+    "num_predict": 100
+  }
+}

@@ -16,7 +16,6 @@
    # Recommended models:
    ollama pull llama3.2        # Fast, good quality
    ollama pull mistral         # Alternative option
-   ollama pull codellama       # For code-heavy notes
    ```
 
 3. **Run the script**:
